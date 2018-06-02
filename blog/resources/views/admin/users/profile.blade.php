@@ -10,12 +10,12 @@
         </div>
 
         <div class="card-body">
-            <form action="{{ route('user.profile.update') }}" method="post">
+            <form action="{{ route('user.profile.update') }}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
 
                 <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" value="{{ $user->name }}" class="form-control">
+                    <label for="name">Username</label>
+                    <input type="text" name="name" value="{{ $user->name }}" class="form-control">
                 </div>
 
                 <div class="form-group">
