@@ -61,13 +61,13 @@
 
 @section('styles')
 
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.10/summernote.css" rel="stylesheet">
 
 @endsection
 
 @section('scripts')
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js" defer></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.10/summernote.js" defer></script>
 
     <script>
         jQuery(document).ready(function() {
