@@ -19,6 +19,11 @@ Route::get('/category/{id}', [
     'as' => 'category.single'
 ]);
 
+Route::get('/tag/{id}', [
+    'uses' => 'FrontEndController@tag',
+    'as' => 'tag.single'
+]);
+
 Auth::routes();
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
@@ -27,7 +32,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
         'uses' => 'HomeController@index',
         'as' => 'home'
     ]);
-
 
     // Post Routes
 
